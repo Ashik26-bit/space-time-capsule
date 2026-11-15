@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Space Time Capsule — discover the stories of humanity's hardware across the solar system.">
+  <title>Space Time Capsule | The Lunar-tics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars"></div>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">✦</span> SPACE TIME CAPSULE</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav id="nav">
+      <a href="#explore">Explore</a><a href="#missions">Mission stories</a><a href="#timeline">Timeline</a><a href="#quiz">Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">NASA SPACE APPS CHALLENGE 2026 · THE LUNAR-TICS</p>
+        <h1>Every machine<br><span>has a story.</span></h1>
+        <p class="hero-lead">Travel through the solar system and discover the human-made machines that changed what we know about space.</p>
+        <a class="button primary" href="#explore">Begin exploring <span>↗</span></a>
+        <p class="hero-note">An educational project for curious minds and future explorers.</p>
+      </div>
+      <div class="solar-art" aria-label="Illustration of planets and spacecraft">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="sun"></div><div class="planet planet-blue"></div><div class="planet planet-red"></div>
+        <div class="satellite">✦</div><div class="art-label">OUR COSMIC<br>BACKYARD</div>
+      </div>
+      <div class="scroll-hint">SCROLL TO EXPLORE ↓</div>
+    </section>
+
+    <section class="section" id="explore">
+      <div class="section-heading"><p class="eyebrow">CHOOSE YOUR DESTINATION</p><h2>Three chapters.<br><span>One human journey.</span></h2></div>
+      <div class="destination-grid">
+        <a class="destination moon" href="#moon"><span class="destination-number">01 / THE MOON</span><div class="moon-art"></div><h3>First footprints</h3><p>Discover the hardware that helped humans reach the lunar surface.</p><span class="card-link">Explore the Moon ↗</span></a>
+        <a class="destination mars" href="#mars"><span class="destination-number">02 / MARS</span><div class="mars-art"></div><h3>Robotic explorers</h3><p>Meet the rovers and aircraft investigating the Red Planet.</p><span class="card-link">Explore Mars ↗</span></a>
+        <a class="destination deep" href="#deep-space"><span class="destination-number">03 / DEEP SPACE</span><div class="deep-art">✧</div><h3>Beyond the planets</h3><p>Follow spacecraft carrying human knowledge into interstellar space.</p><span class="card-link">Explore deep space ↗</span></a>
+      </div>
+    </section>
+
+    <section class="section mission-section" id="missions">
+      <div class="section-heading"><p class="eyebrow">THE SPACE HARDWARE MUSEUM</p><h2>Machines with<br><span>missions to remember.</span></h2><p class="section-intro">A small collection of remarkable explorers. Select a mission to read its story.</p></div>
+      <div class="filter-row"><button class="filter active" data-filter="all">All missions</button><button class="filter" data-filter="moon">Moon</button><button class="filter" data-filter="mars">Mars</button><button class="filter" data-filter="deep">Deep space</button></div>
+      <div class="mission-grid">
+        <article class="mission-card" data-category="moon" id="moon">
+          <div class="mission-visual moon-visual"><span>MOON · 1969</span><div class="lander">☾</div></div>
+          <div class="mission-content"><p class="tag">LUNAR LANDING</p><img src="images/apollo11.jpg" alt="Apollo 11 Lunar Module"><h3>Apollo 11 Lunar Module</h3><p class="mission-desc">The Eagle carried Neil Armstrong and Buzz Aldrin from lunar orbit to the Moon's surface in July 1969. Its descent stage remained on the Moon after the astronauts returned to orbit.</p><div class="facts"><span><b>Purpose</b> Land astronauts</span><span><b>Legacy</b> First crewed lunar landing</span></div><span class="status">STATUS · DESCENT STAGE LEFT ON MOON</span><a class="source" href="https://www.nasa.gov/mission/apollo-11/" target="_blank" rel="noopener">NASA mission source ↗</a></div>
+        </article>
+        <article class="mission-card" data-category="mars" id="mars">
+          <div class="mission-visual mars-visual"><span>MARS · 2021—</span><div class="rover">▰</div></div>
+          <div class="mission-content"><p class="tag">ROBOTIC ROVER</p><img src="images/perserverance.jpg" alt="NASA Perseverance Mars Rover"><h3>Perseverance</h3><p class="mission-desc">NASA's rover explores Jezero Crater, studies ancient environments, collects rock and regolith samples, and searches for signs of ancient microbial life.</p><div class="facts"><span><b>Purpose</b> Study ancient Mars</span><span><b>Legacy</b> Sample collection for possible return</span></div><span class="status">STATUS · MISSION OPERATIONS</span><a class="source" href="https://science.nasa.gov/mission/mars-2020-perseverance/" target="_blank" rel="noopener">NASA mission source ↗</a></div>
+        </article>
+        <article class="mission-card" data-category="mars">
+          <div class="mission-visual flight-visual"><span>MARS · 2021—2024</span><div class="helicopter">✣</div></div>
+          <div class="mission-content"><p class="tag">TECHNOLOGY DEMONSTRATOR</p><img src="images/ingenuity.jpg" alt="NASA Ingenuity Mars Helicopter"><h3>Ingenuity</h3><p class="mission-desc">The small helicopter demonstrated powered, controlled flight on another planet. It completed 72 flights before its mission ended in January 2024.</p><div class="facts"><span><b>Purpose</b> Test aerial flight</span><span><b>Legacy</b> Opened a new way to explore</span></div><span class="status ended">STATUS · MISSION COMPLETED</span><a class="source" href="https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter/" target="_blank" rel="noopener">NASA mission source ↗</a></div>
+        </article>
+        <article class="mission-card" data-category="deep" id="deep-space">
+          <div class="mission-visual deep-visual"><span>DEEP SPACE · 1977—</span><div class="voyager">◉</div></div>
+          <div class="mission-content"><p class="tag">INTERSTELLAR EXPLORER</p><img src="images/voyager1.jpg" alt="NASA Voyager 1 spacecraft"><h3>Voyager 1</h3><p class="mission-desc">Launched in 1977, Voyager 1 flew past Jupiter and Saturn and later entered interstellar space. It carries a Golden Record with sounds and images from Earth.</p><div class="facts"><span><b>Purpose</b> Explore outer planets</span><span><b>Legacy</b> First human-made object in interstellar space</span></div><span class="status">STATUS · OPERATING IN INTERSTELLAR SPACE*</span><a class="source" href="https://science.nasa.gov/mission/voyager/" target="_blank" rel="noopener">NASA mission source ↗</a></div>
+        </article>
+      </div>
+      <p class="fineprint">*Mission status can change. Check the linked NASA mission pages for the latest updates. The project is educational and is not affiliated with or endorsed by NASA.</p>
+    </section>
+
+    <section class="section timeline-section" id="timeline">
+      <div class="section-heading"><p class="eyebrow">A JOURNEY THROUGH TIME</p><h2>Milestones in<br><span>human exploration.</span></h2></div>
+      <div class="timeline">
+        <div class="time-item"><b>1969</b><span class="time-dot"></span><div><h3>Apollo 11 lands on the Moon</h3><p>Humans walk on another world for the first time.</p></div></div>
+        <div class="time-item"><b>1977</b><span class="time-dot"></span><div><h3>Voyager 1 launches</h3><p>A grand tour begins, carrying a message from Earth.</p></div></div>
+        <div class="time-item"><b>2021</b><span class="time-dot"></span><div><h3>Perseverance and Ingenuity reach Mars</h3><p>A rover begins its science mission; a helicopter tests flight.</p></div></div>
+        <div class="time-item"><b>2024</b><span class="time-dot"></span><div><h3>Ingenuity completes its flight mission</h3><p>Its 72 flights exceed the original five-flight demonstration plan.</p></div></div>
+      </div>
+    </section>
+
+    <section class="quiz-section" id="quiz">
+      <div class="quiz-panel">
+        <div><p class="eyebrow">TEST YOUR SPACE KNOWLEDGE</p><h2>Ready for a<br><span>cosmic quiz?</span></h2><p>Three quick questions. See how much you remember from your journey.</p></div>
+        <div class="quiz-box">
+          <div class="quiz-top"><span id="questionCount">QUESTION 1 / 3</span><span id="score">SCORE 0</span></div>
+          <h3 id="question">Which mission first landed humans on the Moon?</h3>
+          <div id="answers" class="answers"></div>
+          <p id="feedback" aria-live="polite"></p>
+          <button class="button primary" id="nextQuestion" disabled>Next question →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing"><p class="eyebrow">THE LUNAR-TICS PRESENT</p><h2>Space is vast.<br><span>Our curiosity is bigger.</span></h2><p>Every footprint, signal and discovery is part of our shared story.</p><a class="button secondary" href="#home">Back to the beginning ↑</a></section>
+  </main>
+  <footer><span>✦ SPACE TIME CAPSULE</span><span>Created by THE LUNAR-TICS · NASA SPACE APPS CHALLENGE 2026</span><span>Educational project · Sources linked on mission cards</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
